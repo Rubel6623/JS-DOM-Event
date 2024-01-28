@@ -1,6 +1,3 @@
-console.log("JS integrate");
-
-
 document.getElementById('btn').onclick=function click(){
   document.body.style.backgroundColor='yellow';
 }
@@ -23,4 +20,23 @@ document.getElementById('btn-update').addEventListener('click', function(){
   const inputValue=inputField.value;
   document.getElementById('update-text').innerText=inputValue;
   inputField.value='';
+})
+
+
+document.getElementById('delete-comment').addEventListener('keyup', function(event){
+
+  const inputText=event.target.value;
+  
+  if(inputText==='delete'){
+    document.getElementById('del-btn').disabled=false;
+  }
+  else{
+    document.getElementById('del-btn').disabled=true;
+  }
+})
+
+
+document.getElementById('del-btn').addEventListener('click', function(){
+  const cmt=document.getElementById('comment');
+  cmt.style.display='none';
 })

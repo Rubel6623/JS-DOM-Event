@@ -6,29 +6,11 @@
   <title>Git Delete Confirmation</title>
 </head>
 <body>
-  <h3>Do you want to delete your repository ?</h3><br>
   <h4 id="my-git">My Git Repository🏚️</h4>
+  <h3>Do you want to delete your repository ?</h3><br>
   <input type="text" id="delete-confirm" placeholder="please type delete"> 
   <button id="delete-btn" disabled>Delete </button>
 
-  <script>
-
-    document.getElementById('delete-confirm').addEventListener('keyup', function(event){
-      const inputValue = event.target.value;
-      const delete_btn = document.getElementById("delete-btn");
-      if (inputValue==='delete'){
-            // delete_btn.removeAttribute('disabled');
-            delete_btn.disabled=false;
-        } else {
-            // delete_btn.setAttribute('disabled', true);
-            delete_btn.disabled=true;
-          };
-      })
-
-    document.getElementById('delete-btn').addEventListener('click', function(event){
-      const git= document.getElementById("my-git");
-      git.style.display='none';     
-    })
-  </script>
+  <script src="../js/script.js"></script>
 </body>
 </html>
