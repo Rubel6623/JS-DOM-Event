@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/eb61c598c6.js" crossorigin="anonymous"></script>
+  <title>Mini Text Editor</title>
+</head>
+<body>
+  <section>
+    <div class="container mx-auto p-6 border-2 rounded-lg my-6">
+      <div class="grid grid-cols-3">
+        <div class="flex gap-3">
+          <button><i class="fa-solid fa-bold"></i></button>
+          <button><i class="fa-solid fa-underline"></i></button>
+          <button><i class="fa-solid fa-italic"></i></button>
+        </div>
+
+        <div class="flex gap-3">
+          <button><i class="fa-solid fa-align-left"></i></button>
+          <button><i class="fa-solid fa-align-center"></i></button>
+          <button><i class="fa-solid fa-align-right"></i></button>
+          <button><i class="fa-solid fa-align-justify"></i></button>
+        </div>
+
+        <div>
+          <input type="number" name="number" class="bg-red-100 w-12 mb-2">
+          <button class="font">aA</button>
+          <input type="color" name="color" id="">
+        </div>
+        
+      </div>
+      <textarea class="bg-sky-100 w-full" name="input" id="input" cols="30" rows="20"></textarea>
+    </div>
+  </section>
+
+  <script src="./JS/script.js"></script>
+</body>
+</html>
